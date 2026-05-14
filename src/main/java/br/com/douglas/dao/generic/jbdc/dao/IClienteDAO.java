@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.douglas.dao.generic.jdbc.dao;
+package br.com.douglas.dao.generic.jbdc.dao;
 
 import java.util.List;
 

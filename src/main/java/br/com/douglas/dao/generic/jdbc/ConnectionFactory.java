@@ -1,7 +1,7 @@
 /**
  * 
  */
-package br.com.douglas.dao.generic.jbdc;
+package br.com.douglas.dao.generic.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -31,7 +31,7 @@ public class ConnectionFactory {
 	private static Connection initConnection() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:postgresql://localhost:15432/vendas_online_2", "postgres", "admin");
+            		"jdbc:postgresql://localhost:15432/vendas_online_2", "postgres", "admin");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
