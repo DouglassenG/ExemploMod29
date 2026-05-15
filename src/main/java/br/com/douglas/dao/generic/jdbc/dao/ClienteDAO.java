@@ -11,7 +11,7 @@ import br.com.douglas.domain.Cliente;
 
 public class ClienteDAO implements IClienteDAO {
 
-    private Connection connection;
+    private final Connection connection;
 
     public ClienteDAO() throws Exception {
         this.connection = ConnectionFactory.getConnection();
